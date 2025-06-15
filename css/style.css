@@ -72,7 +72,7 @@ header h1 {
 
 
 .bienvenida h2 {
-    font-size: 50px;
+    font-size: 40px;
     color: #E9C46A;
     background-color: #1D3557;
     text-align: center;
@@ -86,7 +86,7 @@ header h1 {
 
 .destacado h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     padding: 40px 0;
 }
 
@@ -109,6 +109,7 @@ header h1 {
     background-color: #1d3557c0;
     width: 100%;
     padding: 8px;
+    font-size: 18px;
 }
 
 .imagen-articulo img {
@@ -144,7 +145,7 @@ header h1 {
     justify-content: space-between;
 }
 
-#sobrenosotros titulo-texto {
+#sobrenosotros .titulo-texto {
     flex: 1;
 }
 
@@ -162,9 +163,9 @@ header h1 {
     margin: 0 auto;
 }
 
-#sobrenostros img-sobrenosotros {
-    width: 100px;
-    height: 100px;
+#sobrenosotros .img-sobrenosotros {
+    width: 800px;
+    height: 500px;
     object-fit: cover;
     padding: 10px;
 }
@@ -311,22 +312,45 @@ footer a i:hover {
     opacity: 1;
 }
 
-@media sreen and (max width:372px){
+@media screen and (max-width: 422px){
     header h1 {
-    font-size: 30px;
-    font-weight: 900;
-    font-style: italic;
-    color: #E9C46A;
+        font-size: 30px;
+        font-weight: 900;
+        font-style: italic;
+        color: #E9C46A;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .bienvenida h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .bienvenida h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .destacado h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 40px 0;
+}
+} 
+
+@media screen and (max-width: 692px){
+    .imagen-articulo h3 {
+    color: white;
+    font-size: 10px;
 }
 }
 
-@media sreen and (max width:512px){
-    .bienvenida h2 {
-    font-size: 30px;
-    color: #E9C46A;
-    background-color: #1D3557;
-    text-align: center;
-    font-style: italic;
+@media screen and (max-width: 1060px){
+    #sobrenosotros .img-sobrenosotros {
+    display: none;
 }
 }
 
