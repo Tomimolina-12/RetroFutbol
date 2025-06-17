@@ -100,6 +100,7 @@ header h1 {
 
 .imagen-articulo {
     position: relative;
+    height: 700px;
 }
 
 .imagen-articulo h3 {
@@ -206,6 +207,7 @@ footer a i:hover {
     text-align: center;
     font-size: 50px;
     padding: 40px 0;
+    font-style: italic;
 }
 
 .producto-arg div {
@@ -218,6 +220,10 @@ footer a i:hover {
 
 .img-argentino {
     position: relative;
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .img-argentino h3 {
@@ -226,6 +232,7 @@ footer a i:hover {
     color: white;
     background-color: #1d3557c0;
     width: 100%;
+    font-size: 18px;
     padding: 8px;
 }
 
@@ -245,7 +252,7 @@ footer a i:hover {
     padding: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 
@@ -264,12 +271,13 @@ footer a i:hover {
 .producto-interna h2 {
     text-align: center;
     font-size: 50px;
+    font-style: italic;
     padding: 40px 0;
 }
 
 .producto-interna div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     padding: 20px;
 }
@@ -277,6 +285,10 @@ footer a i:hover {
 
 .img-interna {
     position: relative;
+    height: 300px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .img-interna h3 {
@@ -312,7 +324,7 @@ footer a i:hover {
     opacity: 1;
 }
 
-@media screen and (max-width: 422px){
+@media screen and (max-width: 422px) {
     header h1 {
         font-size: 30px;
         font-weight: 900;
@@ -321,38 +333,93 @@ footer a i:hover {
     }
 }
 
-@media screen and (max-width: 580px){
+
+@media screen and (max-width: 580px) {
     .bienvenida h2 {
         font-size: 25px;
     }
-}
 
-@media screen and (max-width: 580px){
-    .bienvenida h2 {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 580px){
     .destacado h2 {
-    text-align: center;
-    font-size: 25px;
-    padding: 40px 0;
+        text-align: center;
+        font-size: 25px;
+        padding: 40px 0;
+    }
 }
-} 
 
-@media screen and (max-width: 692px){
+
+@media screen and (max-width: 692px) {
     .imagen-articulo h3 {
-    color: white;
-    font-size: 10px;
-}
+        color: white;
+        font-size: 10px;
+    }
+
+    #sobrenosotros h2 {
+        font-size: 30px;
+        font-style: italic;
+        color: #E9C46A;
+        margin-bottom: 20px;
+    }
+
+    #sobrenosotros p {
+        font-size: 14px;
+        color: white;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 
-@media screen and (max-width: 1060px){
+@media screen and (max-width: 1060px) {
     #sobrenosotros .img-sobrenosotros {
-    display: none;
+        display: none;
+    }
 }
+
+@media screen and (max-width: 882px) {
+    .img-argentino h3 {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background-color: #1d3557c0;
+        width: 100%;
+        font-size: 12px;
+        padding: 8px;
+    }
 }
 
+@media screen and (max-width: 582px) {
+    .img-argentino h3 {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background-color: #1d3557c0;
+        width: 100%;
+        font-size: 8px;
+        padding: 8px;
+    }
+}
 
+@media screen and (max-width: 422px) {
+    .img-argentino h3 {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background-color: #1d3557c0;
+        width: 100%;
+        font-size: 6px;
+        padding: 8px;
+    }
 
+    #sobrenosotros p {
+        font-size: 10px;
+        color: white;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #sobrenosotros h2 {
+        font-size: 20px;
+        font-style: italic;
+        color: #E9C46A;
+        margin-bottom: 20px;
+    }
+}
