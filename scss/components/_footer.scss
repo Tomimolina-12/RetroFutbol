@@ -3,17 +3,17 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #1D3557;
+    background-color: $color-secundario;
 
     a {
         text-decoration: none;
 
         i {
             font-size: 50px;
-            color: #E9C46A;
+            color: $color-principal;
             transition: 0.5s;
             &:hover{
-            color: white;
+            color: $color-terciario;
         }
         }
     }

@@ -1,0 +1,12 @@
+//+? variables 
+
+$color-principal:#1d3557;
+$color-secundario:#E9C46A;
+$color-terciario: white;
+
+//*?  MIXIN
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
