@@ -1,0 +1,40 @@
+header {
+    background-color: #1D3557;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 900;
+        font-style: italic;
+        color: #E9C46A;
+    }
+
+    nav {
+        ul {
+            background-color: #1D3557 !important;
+            font-size: 28px;
+
+            li {
+                a {
+                    color: #E9C46A !important;
+
+                    &:hover {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+
+        .boton {
+            border: 2px solid #E9C46A;
+            color: #E9C46A;
+
+            &:hover {
+                background-color: #E9C46A;
+                color: #1D3557;
+            }
+        }
+    }
+}

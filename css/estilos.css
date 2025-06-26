@@ -1,3 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+header {
+  background-color: #1D3557;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  font-size: 60px;
+  font-weight: 900;
+  font-style: italic;
+  color: #E9C46A;
+}
+header nav ul {
+  background-color: #1D3557 !important;
+  font-size: 28px;
+}
+header nav ul li a {
+  color: #E9C46A !important;
+}
+header nav ul li a:hover {
+  color: white !important;
+}
+header nav .boton {
+  border: 2px solid #E9C46A;
+  color: #E9C46A;
+}
+header nav .boton:hover {
+  background-color: #E9C46A;
+  color: #1D3557;
+}
+
 .hero {
   width: 100%;
   height: 900px;
@@ -67,7 +108,7 @@
   transition: opacity 0.3s ease;
   font-size: 14px;
 }
-.destacado .imagen-articulo .info-hover:hover .info-hover {
+.destacado .imagen-articulo:hover .info-hover {
   opacity: 1;
 }
 
@@ -85,7 +126,7 @@
 #sobrenosotros .titulo-texto h2 {
   font-size: 50px;
   font-style: italic;
-  color: #794f5f;
+  color: #E9C46A;
   margin-bottom: 20px;
 }
 #sobrenosotros .titulo-texto p {
@@ -99,6 +140,25 @@
   height: 500px;
   object-fit: cover;
   padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #1D3557;
+}
+footer a {
+  text-decoration: none;
+}
+footer a i {
+  font-size: 50px;
+  color: #E9C46A;
+  transition: 0.5s;
+}
+footer a i:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=estilos.css.map */
