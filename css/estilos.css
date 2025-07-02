@@ -8,6 +8,7 @@ body {
   font-family: "Bebas Neue", sans-serif;
 }
 
+/*-----HEADER------*/
 header {
   background-color: #1D3557;
   position: sticky;
@@ -25,10 +26,11 @@ header nav ul {
   font-size: 28px;
 }
 header nav ul li a {
-  color: #E9C46A !important;
+  color: white !important;
+  transition: 0.5s;
 }
 header nav ul li a:hover {
-  color: white !important;
+  color: #E9C46A !important;
 }
 header nav .boton {
   border: 2px solid #E9C46A;
@@ -39,6 +41,7 @@ header nav .boton:hover {
   color: #1D3557;
 }
 
+/*-------SECCION INDEX-----*/
 .hero {
   width: 100%;
   height: 900px;
@@ -76,7 +79,7 @@ header nav .boton:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding: 20px;
+  padding: 30px;
 }
 .destacado .imagen-articulo {
   position: relative;
@@ -94,19 +97,19 @@ header nav .boton:hover {
   background-color: rgba(29, 53, 87, 0.7529411765);
   width: 100%;
   padding: 8px;
-  font-size: 18px;
+  font-size: 22px;
 }
 .destacado .imagen-articulo .info-hover {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.63);
   color: white;
-  padding: 10px;
+  padding: 15px;
   opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 14px;
+  transition: all 1s;
+  font-size: 18px;
 }
 .destacado .imagen-articulo:hover .info-hover {
   opacity: 1;
@@ -141,6 +144,115 @@ header nav .boton:hover {
   padding: 40px;
 }
 
+/*+++SECCION FUTBOL ARGENTINO*/
+.producto-arg {
+  background-color: #1D3557;
+  color: #E9C46A;
+}
+.producto-arg h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 40px 0;
+  font-style: italic;
+}
+.producto-arg div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+.producto-arg .img-argentino {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.producto-arg .img-argentino img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.producto-arg .img-argentino h3 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: rgba(29, 53, 87, 0.7529411765);
+  width: 100%;
+  font-size: 22px;
+  padding: 8px;
+}
+.producto-arg .img-argentino .info-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: all 1s;
+  font-size: 16px;
+}
+.producto-arg .img-argentino:hover .info-hover {
+  opacity: 1;
+}
+
+/*$-----SECCION FUTBOL INTERNACIONAL------*/
+.producto-interna {
+  background-color: #1D3557;
+  color: #E9C46A;
+}
+.producto-interna h2 {
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+  padding: 40px 0;
+}
+.producto-interna div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+.producto-interna .img-interna {
+  position: relative;
+  height: 300px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.producto-interna .img-interna img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.producto-interna .img-interna h3 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: rgba(29, 53, 87, 0.7529411765);
+  width: 100%;
+  padding: 8px;
+  font-size: 22px;
+}
+.producto-interna .img-interna .info-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: all 1s;
+  font-size: 18px;
+}
+.producto-interna .img-interna:hover .info-hover {
+  opacity: 1;
+}
+
+/*---------FOOTER------*/
 footer {
   display: flex;
   justify-content: space-around;
@@ -152,7 +264,7 @@ footer a {
   text-decoration: none;
 }
 footer a i {
-  font-size: 50px;
+  font-size: 37px;
   color: #1d3557;
   transition: 0.5s;
 }
@@ -160,45 +272,86 @@ footer a i:hover {
   color: white;
 }
 
-@media screen and (max-width: 422px) {
-  header h1 {
-    font-size: 30px;
-    font-weight: 900;
-    font-style: italic;
-    color: #E9C46A;
-  }
-}
-@media screen and (max-width: 580px) {
-  .bienvenida h2 {
-    font-size: 25px;
-  }
-  .destacado h2 {
-    text-align: center;
-    font-size: 25px;
-    padding: 40px 0;
-  }
-}
-@media screen and (max-width: 692px) {
-  .imagen-articulo h3 {
-    color: white;
-    font-size: 10px;
-  }
-  #sobrenosotros h2 {
-    font-size: 30px;
-    font-style: italic;
-    color: #E9C46A;
-    margin-bottom: 20px;
-  }
-  #sobrenosotros p {
-    font-size: 14px;
-    color: white;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
 @media screen and (max-width: 1060px) {
   #sobrenosotros .img-sobrenosotros {
     display: none;
+  }
+  .producto-arg .img-argentino h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(29, 53, 87, 0.7529411765);
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+  }
+  .producto-arg .img-argentino .info-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+    font-size: 14px;
+  }
+  .producto-interna .img-interna h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(29, 53, 87, 0.7529411765);
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+  }
+  .producto-interna .img-interna .info-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .destacado .imagen-articulo h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(29, 53, 87, 0.7529411765);
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+  }
+  .destacado .imagen-articulo .info-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+  }
+  .producto-arg div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  .producto-interna div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 882px) {
@@ -211,8 +364,90 @@ footer a i:hover {
     font-size: 12px;
     padding: 8px;
   }
+  .img-interna h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(29, 53, 87, 0.7529411765);
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
 }
-@media screen and (max-width: 582px) {
+@media screen and (max-width: 770px) {
+  .destacado div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 692px) {
+  .imagen-articulo h3 {
+    color: white;
+    font-size: 10px;
+  }
+  #sobrenosotros .titulo-texto h2 {
+    font-size: 30px;
+    font-style: italic;
+    color: #E9C46A;
+    margin-bottom: 20px;
+  }
+  #sobrenosotros .titulo-texto p {
+    font-size: 16px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .producto-arg div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  .producto-interna div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 692px) and (max-width: 620px) {
+  .hero {
+    width: 100%;
+    height: 900px;
+    color: black;
+    background-image: url(/img/BOCA2025s-c.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  header h1 {
+    font-size: 45px;
+    font-weight: 900;
+    font-style: italic;
+    color: #E9C46A;
+  }
+  .producto-arg h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0;
+    font-style: italic;
+  }
+  .producto-interna h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 692px) and (max-width: 582px) {
   .img-argentino h3 {
     position: absolute;
     bottom: 0;
@@ -222,8 +457,25 @@ footer a i:hover {
     font-size: 8px;
     padding: 8px;
   }
+  .img-interna h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(29, 53, 87, 0.7529411765);
+    width: 100%;
+    font-size: 8px;
+    padding: 8px;
+  }
+  .bienvenida h2 {
+    font-size: 25px;
+  }
+  .destacado h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 40px 0;
+  }
 }
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 692px) and (max-width: 422px) {
   .img-argentino h3 {
     position: absolute;
     bottom: 0;
@@ -233,17 +485,65 @@ footer a i:hover {
     font-size: 6px;
     padding: 8px;
   }
-  #sobrenosotros p {
-    font-size: 10px;
+  .img-interna h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(29, 53, 87, 0.7529411765);
+    width: 100%;
+    font-size: 6px;
+    padding: 8px;
+  }
+  #sobrenosotros .titulo-texto h2 {
+    font-size: 24px;
+    font-style: italic;
+    color: #E9C46A;
+    margin-bottom: 20px;
+  }
+  #sobrenosotros .titulo-texto p {
+    font-size: 13px;
     color: white;
     max-width: 800px;
     margin: 0 auto;
   }
-  #sobrenosotros h2 {
-    font-size: 20px;
+  .destacado .imagen-articulo h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(29, 53, 87, 0.7529411765);
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .destacado .imagen-articulo .info-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 10px;
+  }
+  header h1 {
+    font-size: 30px;
+    font-weight: 900;
     font-style: italic;
     color: #E9C46A;
-    margin-bottom: 20px;
+  }
+  .producto-arg h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0;
+    font-style: italic;
+  }
+  .producto-interna h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0;
+    font-style: italic;
   }
 }
 

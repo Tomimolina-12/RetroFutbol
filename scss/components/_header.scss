@@ -1,3 +1,5 @@
+/*-----HEADER------*/
+
 header {
     background-color: #1D3557;
     position: sticky;
@@ -18,10 +20,11 @@ header {
 
             li {
                 a {
-                    color: #E9C46A !important;
+                    color: white !important;
+                    transition: 0.5s;
 
                     &:hover {
-                        color: white !important;
+                        color: #E9C46A!important;
                     }
                 }
             }
