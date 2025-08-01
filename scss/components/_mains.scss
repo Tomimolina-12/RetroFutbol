@@ -4,14 +4,27 @@
     width: 100%;
     height: 900px;
     color: black;
-    background-image: url(../img/RONALDO2002EDIT.png);
+    background-image: url(/img/RONALDO2002.jpeg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     flex-direction: column;
-    @include flex(flex, center, center);
+    @include flex(flex, right, end);
     font-size: 25px;
+
+    h2 {
+        color: white;
+        font-size: 60px;
+        padding-right: 12%;
+        padding-top: 10%;
+    }
+
+    p {
+        color: white;
+        font-size: 38px;
+        padding-right: 15%;
+    }
 }
 
 
@@ -38,8 +51,8 @@
     div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        padding: 30px;
+        gap: 50px;
+        padding: 50px;
     }
 
     .imagen-articulo {
@@ -81,34 +94,53 @@
     }
 }
 
-#sobrenosotros {
+.sobrenosotros {
     background-color: #1D3557;
-    padding: 40px 40px;
-    @include flex(flex, space-between, center);
-    text-align: center;
+    color: #E9C46A;
+
+    h2 {
+        text-align: center;
+        font-size: 50px;
+        padding: 40px 0;
+        font-style: italic;
+    }
+
 
     .titulo-texto {
-        flex: 1;
+        background-color: #1D3557;
+        padding: 40px 40px;
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+        }
 
         h2 {
             font-size: 50px;
             font-style: italic;
             color: #E9C46A;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         p {
-            font-size: 18px;
+            font-size: 20px;
             color: white;
             max-width: 800px;
             margin: 0 auto;
+            height: 100%;
+            padding-top: 10%;
         }
-    }
 
-    .img-sobrenosotros {
-        height: 480px;
-        object-fit: cover;
-        padding: 40px;
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
     }
 }
 
@@ -129,7 +161,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
-        padding: 20px;
+        padding: 30px;
 
 
     }
@@ -198,7 +230,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
-        padding: 20px;
+        padding: 30px;
 
     }
 
@@ -246,13 +278,19 @@
 }
 
 /*------ SECCION CONTACTO-----*/
-.contacto h2 {
-    text-align: center;
-    font-size: 50px;
-    font-style: italic;
-    padding: 40px 0;
-    color: #E9C46A;
+.contacto {
     background-color: #1D3557;
+    margin-bottom: 0;
+    overflow: hidden;
+
+    h2 {
+        text-align: center;
+        font-size: 50px;
+        font-style: italic;
+        padding: 40px 0;
+        color: #E9C46A;
+        background-color: #1D3557;
+    }
 }
 
 .row {
@@ -266,12 +304,22 @@
 .g-3 {
 
     background-color: #E9C46A;
+    color: #1D3557;
+}
+
+.navbar-toggler {
+    background-color: #E9C46A;
+}
+
+.btn-primary {
+    background-color: #1D3557 !important;
+    color: #E9C46A !important;
+    border-color: #E9C46A !important;
 }
 
 .mapa {
-    margin: 60px;
-    padding: 30px;
     text-align: center;
-    background-color: #E9C46A;
-    border-radius: 20px;
+    background-color: #1D3557;
+    margin: 0;
+    padding: 40px;
 }

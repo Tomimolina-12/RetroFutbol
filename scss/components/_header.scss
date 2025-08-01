@@ -7,7 +7,7 @@ header {
     z-index: 1000;
 
     h1 {
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 900;
         font-style: italic;
         color: #E9C46A;
@@ -16,12 +16,17 @@ header {
     nav {
         ul {
             background-color: #1D3557 !important;
-            font-size: 28px;
+            font-size: 25px;
+            
 
             li {
                 a {
                     color: white !important;
                     transition: 0.5s;
+
+                    .nav-link{
+                        font-size: 35px!important;
+                    }
 
                     &:hover {
                         color: #E9C46A!important;

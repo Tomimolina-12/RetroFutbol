@@ -16,18 +16,21 @@ header {
   z-index: 1000;
 }
 header h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
   font-style: italic;
   color: #E9C46A;
 }
 header nav ul {
   background-color: #1D3557 !important;
-  font-size: 28px;
+  font-size: 25px;
 }
 header nav ul li a {
   color: white !important;
   transition: 0.5s;
+}
+header nav ul li a .nav-link {
+  font-size: 35px !important;
 }
 header nav ul li a:hover {
   color: #E9C46A !important;
@@ -46,16 +49,27 @@ header nav .boton:hover {
   width: 100%;
   height: 900px;
   color: black;
-  background-image: url(../img/RONALDO2002EDIT.png);
+  background-image: url(/img/RONALDO2002.jpeg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   flex-direction: column;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: end;
   font-size: 25px;
+}
+.hero h2 {
+  color: white;
+  font-size: 60px;
+  padding-right: 12%;
+  padding-top: 10%;
+}
+.hero p {
+  color: white;
+  font-size: 38px;
+  padding-right: 15%;
 }
 
 .bienvenida h2 {
@@ -78,8 +92,8 @@ header nav .boton:hover {
 .destacado div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 30px;
+  gap: 50px;
+  padding: 50px;
 }
 .destacado .imagen-articulo {
   position: relative;
@@ -115,33 +129,47 @@ header nav .boton:hover {
   opacity: 1;
 }
 
-#sobrenosotros {
+.sobrenosotros {
+  background-color: #1D3557;
+  color: #E9C46A;
+}
+.sobrenosotros h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 40px 0;
+  font-style: italic;
+}
+.sobrenosotros .titulo-texto {
   background-color: #1D3557;
   padding: 40px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
 }
-#sobrenosotros .titulo-texto {
-  flex: 1;
+.sobrenosotros .titulo-texto div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
 }
-#sobrenosotros .titulo-texto h2 {
+.sobrenosotros .titulo-texto h2 {
   font-size: 50px;
   font-style: italic;
   color: #E9C46A;
   margin-bottom: 20px;
+  text-align: center;
 }
-#sobrenosotros .titulo-texto p {
-  font-size: 18px;
+.sobrenosotros .titulo-texto p {
+  font-size: 20px;
   color: white;
   max-width: 800px;
   margin: 0 auto;
+  height: 100%;
+  padding-top: 10%;
 }
-#sobrenosotros .img-sobrenosotros {
-  height: 480px;
+.sobrenosotros .titulo-texto img {
+  width: 100%;
+  max-height: 400px;
   object-fit: cover;
-  padding: 40px;
+  border-radius: 10px;
 }
 
 /*+++SECCION FUTBOL ARGENTINO*/
@@ -159,7 +187,7 @@ header nav .boton:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  padding: 20px;
+  padding: 30px;
 }
 .producto-arg .img-argentino {
   position: relative;
@@ -213,7 +241,7 @@ header nav .boton:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  padding: 20px;
+  padding: 30px;
 }
 .producto-interna .img-interna {
   position: relative;
@@ -253,6 +281,11 @@ header nav .boton:hover {
 }
 
 /*------ SECCION CONTACTO-----*/
+.contacto {
+  background-color: #1D3557;
+  margin-bottom: 0;
+  overflow: hidden;
+}
 .contacto h2 {
   text-align: center;
   font-size: 50px;
@@ -272,14 +305,24 @@ header nav .boton:hover {
 
 .g-3 {
   background-color: #E9C46A;
+  color: #1D3557;
+}
+
+.navbar-toggler {
+  background-color: #E9C46A;
+}
+
+.btn-primary {
+  background-color: #1D3557 !important;
+  color: #E9C46A !important;
+  border-color: #E9C46A !important;
 }
 
 .mapa {
-  margin: 60px;
-  padding: 30px;
   text-align: center;
-  background-color: #E9C46A;
-  border-radius: 20px;
+  background-color: #1D3557;
+  margin: 0;
+  padding: 40px;
 }
 
 /*---------FOOTER------*/
@@ -302,10 +345,45 @@ footer a i:hover {
   color: white;
 }
 
-@media screen and (max-width: 1060px) {
-  #sobrenosotros .img-sobrenosotros {
-    display: none;
+@media screen and (max-width: 1250px) {
+  .hero h2 {
+    color: white;
+    font-size: 50px;
+    padding-right: 12%;
+    padding-top: 10%;
   }
+  .hero p {
+    color: white;
+    font-size: 28px;
+    padding-right: 15%;
+  }
+  header h1 {
+    font-size: 38px;
+    font-weight: 900;
+    font-style: italic;
+    color: #E9C46A;
+  }
+  header nav ul li a .nav-link {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 34px;
+    font-weight: 900;
+    font-style: italic;
+    color: #E9C46A;
+  }
+  .sobrenosotros .titulo-texto p {
+    font-size: 18px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 1060px) {
   .producto-arg .img-argentino h3 {
     position: absolute;
     bottom: 0;
@@ -348,6 +426,25 @@ footer a i:hover {
     transition: all 1s;
     font-size: 14px;
   }
+  .hero h2 {
+    color: white;
+    font-size: 45px;
+    padding-right: 12%;
+    padding-top: 10%;
+  }
+  .hero p {
+    color: white;
+    font-size: 25px;
+    padding-right: 15%;
+  }
+  .sobrenosotros .titulo-texto p {
+    font-size: 17px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+  }
 }
 @media screen and (max-width: 970px) {
   .destacado .imagen-articulo h3 {
@@ -383,6 +480,14 @@ footer a i:hover {
     gap: 30px;
     padding: 20px;
   }
+  .sobrenosotros .titulo-texto p {
+    font-size: 16px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+  }
 }
 @media screen and (max-width: 882px) {
   .img-argentino h3 {
@@ -403,31 +508,70 @@ footer a i:hover {
     font-size: 12px;
     padding: 8px;
   }
+  .hero h2 {
+    color: white;
+    font-size: 40px;
+    padding-right: 12%;
+    padding-top: 10%;
+  }
+  .hero p {
+    color: white;
+    font-size: 23px;
+    padding-right: 15%;
+  }
+  .sobrenosotros .titulo-texto p {
+    font-size: 14px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+  }
 }
 @media screen and (max-width: 770px) {
   .destacado div {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 30px;
+    gap: 40px;
+    padding: 40px;
+  }
+  .producto-arg h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0;
+    font-style: italic;
+  }
+  .producto-interna h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0;
+    font-style: italic;
+  }
+  .sobrenosotros h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+    font-style: italic;
+  }
+  .contacto h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+    font-style: italic;
+  }
+  .sobrenosotros .titulo-texto p {
+    font-size: 12px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
   }
 }
 @media screen and (max-width: 692px) {
   .imagen-articulo h3 {
     color: white;
     font-size: 10px;
-  }
-  #sobrenosotros .titulo-texto h2 {
-    font-size: 30px;
-    font-style: italic;
-    color: #E9C46A;
-    margin-bottom: 20px;
-  }
-  #sobrenosotros .titulo-texto p {
-    font-size: 16px;
-    color: white;
-    max-width: 800px;
-    margin: 0 auto;
   }
   .producto-arg div {
     display: grid;
@@ -441,8 +585,6 @@ footer a i:hover {
     gap: 30px;
     padding: 20px;
   }
-}
-@media screen and (max-width: 692px) and (max-width: 620px) {
   .hero {
     width: 100%;
     height: 900px;
@@ -458,26 +600,77 @@ footer a i:hover {
     align-items: center;
     font-size: 18px;
   }
+  .sobrenosotros .titulo-texto p {
+    font-size: 10px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+  }
+  .row {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+}
+@media screen and (max-width: 692px) and (max-width: 692px) {
+  .mapa iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 620px) {
   header h1 {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 900;
     font-style: italic;
     color: #E9C46A;
   }
   .producto-arg h2 {
     text-align: center;
-    font-size: 40px;
-    padding: 40px 0;
+    font-size: 35px;
+    padding: 35px 0;
     font-style: italic;
   }
   .producto-interna h2 {
     text-align: center;
-    font-size: 40px;
-    padding: 40px 0;
+    font-size: 35px;
+    padding: 35px;
     font-style: italic;
   }
+  .sobrenosotros h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 35px;
+    font-style: italic;
+  }
+  .contacto h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 35px;
+    font-style: italic;
+  }
+  .hero h2 {
+    color: white;
+    font-size: 40px;
+  }
+  .hero p {
+    color: white;
+    font-size: 18px;
+  }
+  .sobrenosotros .titulo-texto p {
+    font-size: 9px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+  }
 }
-@media screen and (max-width: 692px) and (max-width: 582px) {
+@media screen and (max-width: 582px) {
   .img-argentino h3 {
     position: absolute;
     bottom: 0;
@@ -504,8 +697,33 @@ footer a i:hover {
     font-size: 25px;
     padding: 40px 0;
   }
+  .row {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
 }
-@media screen and (max-width: 692px) and (max-width: 422px) {
+@media screen and (max-width: 476px) {
+  .hero h2 {
+    color: white;
+    font-size: 30px;
+  }
+  .hero p {
+    color: white;
+    font-size: 14px;
+  }
+  .sobrenosotros .titulo-texto p {
+    font-size: 7px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 422px) {
   .img-argentino h3 {
     position: absolute;
     bottom: 0;
@@ -523,18 +741,6 @@ footer a i:hover {
     width: 100%;
     font-size: 6px;
     padding: 8px;
-  }
-  #sobrenosotros .titulo-texto h2 {
-    font-size: 24px;
-    font-style: italic;
-    color: #E9C46A;
-    margin-bottom: 20px;
-  }
-  #sobrenosotros .titulo-texto p {
-    font-size: 13px;
-    color: white;
-    max-width: 800px;
-    margin: 0 auto;
   }
   .destacado .imagen-articulo h3 {
     position: absolute;
@@ -574,6 +780,35 @@ footer a i:hover {
     font-size: 30px;
     padding: 40px 0;
     font-style: italic;
+  }
+  .sobrenosotros h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0;
+    font-style: italic;
+  }
+  .contacto h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0;
+    font-style: italic;
+  }
+  .row {
+    max-width: 300px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+}
+@media screen and (max-width: 392px) {
+  .sobrenosotros .titulo-texto p {
+    font-size: 6px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
   }
 }
 
